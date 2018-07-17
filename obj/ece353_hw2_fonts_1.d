@@ -1,0 +1,15 @@
+.\obj\ece353_hw2_fonts_1.o: I:\ECE353\HW2\ece353_hw2_fonts.c
+.\obj\ece353_hw2_fonts_1.o: I:\ECE353\HW2\ece353_hw2_fonts.h
+.\obj\ece353_hw2_fonts_1.o: C:\ProgramData\App-V\DE50D8B9-402F-4CAC-9DEA-99ADC8882CA4\8A984B0A-A990-4F1D-B426-7065E242CA63\Root\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\ece353_hw2_fonts_1.o: C:\ProgramData\App-V\DE50D8B9-402F-4CAC-9DEA-99ADC8882CA4\8A984B0A-A990-4F1D-B426-7065E242CA63\Root\ARM\ARMCC\bin\..\include\stdio.h
+.\obj\ece353_hw2_fonts_1.o: C:\ProgramData\App-V\DE50D8B9-402F-4CAC-9DEA-99ADC8882CA4\8A984B0A-A990-4F1D-B426-7065E242CA63\Root\ARM\ARMCC\bin\..\include\string.h
+.\obj\ece353_hw2_fonts_1.o: ..\peripherals\include\lcd.h
+.\obj\ece353_hw2_fonts_1.o: ..\drivers\include\driver_defines.h
+.\obj\ece353_hw2_fonts_1.o: C:\ProgramData\App-V\DE50D8B9-402F-4CAC-9DEA-99ADC8882CA4\8A984B0A-A990-4F1D-B426-7065E242CA63\Root\ARM\ARMCC\bin\..\include\stdbool.h
+.\obj\ece353_hw2_fonts_1.o: C:\ProgramData\App-V\DE50D8B9-402F-4CAC-9DEA-99ADC8882CA4\8A984B0A-A990-4F1D-B426-7065E242CA63\Root\ARM\ARMCC\bin\..\include\errno.h
+.\obj\ece353_hw2_fonts_1.o: C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h
+.\obj\ece353_hw2_fonts_1.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm4.h
+.\obj\ece353_hw2_fonts_1.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h
+.\obj\ece353_hw2_fonts_1.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h
+.\obj\ece353_hw2_fonts_1.o: C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h
+.\obj\ece353_hw2_fonts_1.o: ..\drivers\include\gpio_port.h
