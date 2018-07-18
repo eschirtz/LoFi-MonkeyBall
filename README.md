@@ -3,14 +3,29 @@ Taking inspiration from the classic video game series "Monkey Ball", we wrote th
 
 >This application was written as part of an open ended final project for ECE353 Introduction to Microprocessor Systems, taught by Eric Hoffman at University of Wisconsin Madison in 2018.
 
-### [DEMO VIDEO](https://youtu.be/pqWpO7V8EQA)
+### Watch the Demo
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=pqWpO7V8EQA
 " target="_blank"><img src="http://img.youtube.com/vi/pqWpO7V8EQA/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ### Features
-* Feature 1
-* Feature 2
++ Simulated Inertia
++ Fast Collision Detection
++ Easy Level Construction
++ Animated Sprites
++ High Scores
+
+#### Simulated Inertia
+
+#### Fast Collision Detection
+
+#### Easy Level Construction
+
+#### Animated Sprites
+
+#### High Scores
+
 
 #### Copyright (c) 2015-16, Joe Krachey
 #### All rights reserved.
