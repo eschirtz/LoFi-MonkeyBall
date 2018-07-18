@@ -3,7 +3,6 @@ Taking inspiration from the classic video game series "Monkey Ball", we wrote th
 
 ### Copy Write Info
 Copyright (c) 2015-16, Joe Krachey
-
 All rights reserved.
 
 [Watch the demo here!](https://youtu.be/pqWpO7V8EQA)
