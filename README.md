@@ -1,4 +1,6 @@
 # LoFi-MonkeyBall
+#### [Eric Schirtzinger](https://github.com/eschirtz) & [Carly Krebs](https://github.com/krebcarl)
+
 Taking inspiration from the classic video game series "Monkey Ball", we wrote this game for the [Tiva Launch Pad (ARM Cortex-M)](http://processors.wiki.ti.com/index.php/Tiva_C_Series_LaunchPads).
 
 >This application was written as part of an open ended final project for ECE353 Introduction to Microprocessor Systems, taught by Eric Hoffman at University of Wisconsin Madison in 2018.
