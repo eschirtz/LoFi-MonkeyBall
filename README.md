@@ -9,22 +9,22 @@ Taking inspiration from the classic video game series "Monkey Ball", we wrote th
 " target="_blank"><img src="http://img.youtube.com/vi/pqWpO7V8EQA/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-### Features
+## Features
 + Simulated Inertia
 + Fast Collision Detection
 + Easy Level Construction
 + Animated Sprites
 + High Scores
 
-#### Simulated Inertia
+### Simulated Inertia
 
-#### Fast Collision Detection
+### Fast Collision Detection
 
-#### Easy Level Construction
+### Easy Level Construction
 
-#### Animated Sprites
+### Animated Sprites
 
-#### High Scores
+### High Scores
 
 
 #### Copyright (c) 2015-16, Joe Krachey
