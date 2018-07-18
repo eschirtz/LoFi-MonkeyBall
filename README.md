@@ -17,15 +17,76 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 + High Scores
 
 ### Simulated Inertia
-
+A more detailed description and implementation examples
+```C
+int main()
+{
+    char a = 30;
+    char b = 40;
+    char c = 10;
+    char d = (a * b) / c;
+    printf ("%d ", d);
+ 
+    return 0;
+}
+```
 ### Fast Collision Detection
-
+A more detailed description and implementation examples
+```C
+int main()
+{
+    char a = 30;
+    char b = 40;
+    char c = 10;
+    char d = (a * b) / c;
+    printf ("%d ", d);
+ 
+    return 0;
+}
+```
 ### Easy Level Construction
-
+A more detailed description and implementation examples
+```C
+int main()
+{
+    char a = 30;
+    char b = 40;
+    char c = 10;
+    char d = (a * b) / c;
+    printf ("%d ", d);
+ 
+    return 0;
+}
+```
 ### Animated Sprites
-
+A more detailed description and implementation examples
+```C
+int main()
+{
+    char a = 30;
+    char b = 40;
+    char c = 10;
+    char d = (a * b) / c;
+    printf ("%d ", d);
+ 
+    return 0;
+}
+```
 ### High Scores
-
+A more detailed description and implementation examples
+```C
+int main()
+{
+    char a = 30;
+    char b = 40;
+    char c = 10;
+    char d = (a * b) / c;
+    printf ("%d ", d);
+ 
+    return 0;
+}
+```
+___
 
 #### Copyright (c) 2015-16, Joe Krachey
 #### All rights reserved.
