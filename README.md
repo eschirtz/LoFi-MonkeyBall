@@ -12,7 +12,7 @@ Taking inspiration from the classic video game series "Monkey Ball", we wrote th
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Features
-+ [Simulated Inertia](###Simulated Inertia)
++ [Simulated Inertia](###Simulated-Inertia)
 + Fast Collision Detection
 + Easy Level Construction
 + Animated Sprites
