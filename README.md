@@ -13,10 +13,10 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Features
 + [Simulated Inertia](#simulated-inertia)
-+ Fast Collision Detection
-+ Easy Level Construction
-+ Animated Sprites
-+ High Scores
++ [Fast Collision Detection](#fast-collision-detection)
++ [Easy Level Construction](#easy-level-construction)
++ [Animated Sprites](#animated-sprites)
++ [High Scores](#high-scores)
 
 ### Simulated Inertia
 A more detailed description and implementation examples
