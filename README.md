@@ -19,18 +19,13 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 + [High Scores](#high-scores)
 
 ### Simulated Inertia
-A more detailed description and implementation examples
+It was very important for us to make sure that this game felt real while playing. One of our main focuses was on simulating inertia, to give the ball some weight. I came up with this little "hack" while writing another program, and thought it would work perfectly here.
+The main idea is to have user input only update a "target" speed, rather than the true speed. In this case, it was the raw accellerometer data that set our target speeds. Then each time the update function is called, we increment the real speed towards the target speed by some fraction of the difference. This results in the real speed smoothly chasing a more hectic input speed.
 ```C
-int main()
-{
-    char a = 30;
-    char b = 40;
-    char c = 10;
-    char d = (a * b) / c;
-    printf ("%d ", d);
- 
-    return 0;
-}
+ball->y_speed_target = board_tilt.y / SPEED_FACTOR; // Scale down the input data
+ball->x_speed_target = -1 * (board_tilt.x / SPEED_FACTOR); 
+ball->x_speed += (ball->x_speed_target - ball->x_speed) / EASING; // Update "real" speed
+ball->y_speed += (ball->y_speed_target - ball->y_speed) / EASING;
 ```
 ### Fast Collision Detection
 A more detailed description and implementation examples
