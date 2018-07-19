@@ -30,11 +30,9 @@ ball->y_speed += (ball->y_speed_target - ball->y_speed) / EASING;
 Below is the structure we used to track the ball's state
 ```C
 typedef struct{
-	uint16_t x; 
-	uint16_t y; // Current position in pixel coordinates
-	//uint16_t old_x; // Last position in pixel coordinates
-	//uint16_t old_y; 
-	uint16_t x_hres; // Keep position at a higher resolution and project down when rendering
+	uint16_t x; // Current position in pixel coordinates
+	uint16_t y; 
+	uint16_t x_hres; // Keep position at a higher resolution, project down to pixel coordinates when rendering
 	uint16_t y_hres; 
 	int16_t x_speed; // Current speed (at higher resolution) in tilt values
 	int16_t y_speed; 
