@@ -14,7 +14,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ## Features
 + [Simulated Inertia](#simulated-inertia)
 + [Easy Level Construction](#easy-level-construction)
-+ [Fast Collision Detection](#fast-collision-detection)
++ [Simple Collision Detection](#simple-collision-detection)
 + [Animated Sprites](#animated-sprites)
 + [High Scores](#high-scores)
 
@@ -72,8 +72,8 @@ int main()
 	};
 }
 ```
-### Fast Collision Detection
-A more detailed description and implementation examples
+### Simple Collision Detection
+In order to figure out what board components corresponded to actual pixels, we wrote two helper functions. 
 ```C
 // Convert board coordinates (16x16 blocks) to screen coordinates 
 uint16_t b2s_x(uint16_t x){
