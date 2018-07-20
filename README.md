@@ -42,17 +42,34 @@ typedef struct{
 }ball_t; 
 ```
 ### Easy Level Construction
-A more detailed description and implementation examples
+In order to allow for some variety in game play, we wanted to come up with an easy way to write new levels. Our solution was to simply make a two-dimensional array of integers, each integer associated with a different level component (grass, lava, obstical, winzone).
+
+Each array index corresponds to a 16x16px square on the screen, when rendering we iterate through the array, and render each level component bit map. This also is how we do collision detection, take the screen coordinates, divide by 16, and index into the 2d-array to get back the level component.
+
 ```C
 int main()
 {
-    char a = 30;
-    char b = 40;
-    char c = 10;
-    char d = (a * b) / c;
-    printf ("%d ", d);
- 
-    return 0;
+	// Each level object is used for both rendering and logic
+	// Level Data Structure
+	// Each level is a 2d array of uint8_t
+	// 0: PATH
+	// 1: LAVA
+	// 2: Obstical
+	// 3: WinZone
+	//
+	// BOARD IS INDEXED "BACKWARDS"! lvl[y][x] 
+	//
+	// Helpful elements to build levels
+	// {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+	// {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+	uint8_t lvl_2[LVL_H][LVL_W] = {
+	{0,0,0,0,0,0,0,1,1,1,1,1,1,1,1},
+	{0,0,0,0,0,0,0,1,1,1,1,1,1,1,1},
+	{0,0,0,0,0,0,0,1,1,1,1,1,1,1,1},
+	{0,0,0,0,0,0,0,1,1,1,1,1,1,1,1} 
+	// ...
+	// ...etc
+	};
 }
 ```
 ### Fast Collision Detection
