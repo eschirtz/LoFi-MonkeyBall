@@ -11,6 +11,9 @@ Taking inspiration from the classic video game series "Monkey Ball", we wrote th
 " target="_blank"><img src="http://img.youtube.com/vi/pqWpO7V8EQA/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
+## Overview
+In this game, users roll a ball around the grass, trying to avoid hitting the fire or falling the lava. Sometimes fire blocks the way, touching the fire puts it out. Once the user reaches the checkered end area, they win! The player with the fastest time gets their initials displayed on the homescreen for all to see.
+
 ## Highlights
 + [Simulated Inertia](#simulated-inertia)
 + [Easy Level Construction](#easy-level-construction)
