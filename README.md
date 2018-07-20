@@ -13,21 +13,20 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Features
 + [Simulated Inertia](#simulated-inertia)
-+ [Fast Collision Detection](#fast-collision-detection)
 + [Easy Level Construction](#easy-level-construction)
++ [Fast Collision Detection](#fast-collision-detection)
 + [Animated Sprites](#animated-sprites)
 + [High Scores](#high-scores)
 
 ### Simulated Inertia
-It was very important for us to make sure that this game felt real while playing. One of our main focuses was on simulating inertia, to give the ball some weight. I came up with this little "hack" while writing another program, and thought it would work perfectly here.
+It was very important for us to make sure that the game controlls felt real. One of our main focuses was on simulating inertia, to give the ball some weight. I came up with this little "hack" while writing another program, and thought it would work perfectly here.
 
-
-The main idea is to have user input only update a "target" speed, rather than the true speed. In this case, it was the raw accellerometer data that set our target speeds. Then each time the update function is called, we increment the real speed towards the target speed by some fraction of the difference. This results in the real speed smoothly chasing a more hectic input speed.
+The main idea is to have user input only update a *target* speed, rather than the true speed. In this case, it was the raw accelerometer data that set our *target* speeds. Then each frame, we increment the real speed towards the target speed by some fraction of the difference. This results in the real speed smoothly chasing a more hectic input speed.
 ```C
-ball->y_speed_target = board_tilt.y / SPEED_FACTOR; // Scale down the input data
-ball->x_speed_target = -1 * (board_tilt.x / SPEED_FACTOR); 
-ball->x_speed += (ball->x_speed_target - ball->x_speed) / EASING; // Update "real" speed
-ball->y_speed += (ball->y_speed_target - ball->y_speed) / EASING;
+	ball->y_speed_target = board_tilt.y / SPEED_FACTOR; // Scale down the input data
+	ball->x_speed_target = -1 * (board_tilt.x / SPEED_FACTOR); 
+	ball->x_speed += (ball->x_speed_target - ball->x_speed) / EASING; // Update "real" speed
+	ball->y_speed += (ball->y_speed_target - ball->y_speed) / EASING;
 ```
 Below is the structure we used to track the ball's state
 ```C
@@ -42,7 +41,7 @@ typedef struct{
 	int16_t y_speed_target; 
 }ball_t; 
 ```
-### Fast Collision Detection
+### Easy Level Construction
 A more detailed description and implementation examples
 ```C
 int main()
@@ -56,7 +55,7 @@ int main()
     return 0;
 }
 ```
-### Easy Level Construction
+### Fast Collision Detection
 A more detailed description and implementation examples
 ```C
 int main()
