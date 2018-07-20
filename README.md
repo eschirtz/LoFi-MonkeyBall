@@ -73,7 +73,7 @@ int main()
 }
 ```
 ### Simple Collision Detection
-In order to figure out what board components corresponded to actual pixels, we wrote two helper functions. 
+In order to figure out what board components corresponded to actual pixels, we wrote two helper functions. Touch events and ball position are stored in screen coordinates, so all we need to do is convert these coordinates to board coordinates and index into the level array. 
 ```C
 // Convert board coordinates (16x16 blocks) to screen coordinates 
 uint16_t b2s_x(uint16_t x){
