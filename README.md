@@ -12,7 +12,7 @@ Taking inspiration from the classic video game series "Monkey Ball", we wrote th
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Overview
-In this game, users roll a ball around the grass, trying to avoid hitting the fire or falling the lava. Sometimes fire blocks the way, touching the fire puts it out. Once the user reaches the checkered end area, they win! The player with the fastest time gets their initials displayed on the homescreen for all to see.
+In this game, users roll a ball around the grass, trying to avoid hitting the fire or falling in the lava. Sometimes fire blocks the way, luckily touching the fire puts it out. Once the user reaches the checkered end area, they win! The player with the fastest time gets their initials displayed on the homescreen for all to see.
 
 ## Highlights
 + [Simulated Inertia](#simulated-inertia)
@@ -20,7 +20,7 @@ In this game, users roll a ball around the grass, trying to avoid hitting the fi
 + [Simple Collision Detection](#simple-collision-detection)
 
 ### Simulated Inertia
-It was very important for us to make sure that the game controlls felt real. One of our main focuses was on simulating inertia, to give the ball some weight. I came up with this little "hack" while writing another program, and thought it would work perfectly here.
+It was very important for us to make sure that the game controls felt real. One of our main focuses was on simulating inertia, to give the ball some weight. I came up with this little "hack" while writing another program, and thought it would work perfectly here.
 
 The main idea is to have user input only update a *target* speed, rather than the true speed. In this case, it was the raw accelerometer data that set our *target* speeds. Then each frame, we increment the real speed towards the target speed by some fraction of the difference. This results in the real speed smoothly chasing a more hectic input speed.
 ```C
@@ -43,9 +43,9 @@ typedef struct{
 }ball_t; 
 ```
 ### Easy Level Construction
-In order to allow for some variety in game play, we wanted to come up with an easy way to write new levels. Our solution was to simply make a two-dimensional array of integers, each integer associated with a different level component (grass, lava, obstical, winzone).
+In order to allow for some variety in game play, we wanted to come up with an easy way to write new levels. Our solution was to simply make a two-dimensional array of integers, each integer associated with a different level component (grass, lava, obstacle, winzone).
 
-Each array index corresponds to a 16x16px square on the screen, when rendering we iterate through the array, and render each level component bit map. This also is how we do collision detection, take the screen coordinates, divide by 16, and index into the 2d-array to get back the level component.
+Each array index corresponds to a 16x16px square on the screen, when rendering we iterate through the array, and render each level component bitmap. This also is how we do collision detection, take the screen coordinates, divide by 16, and index into the 2d-array to get back the level component.
 
 ```C
 int main()
@@ -55,7 +55,7 @@ int main()
 	// Each level is a 2d array of uint8_t
 	// 0: PATH
 	// 1: LAVA
-	// 2: Obstical
+	// 2: Obstacle
 	// 3: WinZone
 	//
 	// BOARD IS INDEXED "BACKWARDS"! lvl[y][x] 
@@ -74,7 +74,7 @@ int main()
 }
 ```
 ### Simple Collision Detection
-In order to figure out what board components corresponded to actual pixels, we wrote two helper functions. Touch events and ball position are stored in screen coordinates, so all we need to do is convert these coordinates to board coordinates and index into the level array. 
+In order to figure out what board components correspond to actual pixels, we wrote two helper functions. Touch events and ball position are stored in screen coordinates, so all we need to do is convert these coordinates to board coordinates and index into the level array. 
 ```C
 // Convert board coordinates (16x16 blocks) to screen coordinates 
 uint16_t b2s_x(uint16_t x){
