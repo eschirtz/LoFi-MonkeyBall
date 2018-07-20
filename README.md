@@ -75,15 +75,27 @@ int main()
 ### Fast Collision Detection
 A more detailed description and implementation examples
 ```C
-int main()
-{
-    char a = 30;
-    char b = 40;
-    char c = 10;
-    char d = (a * b) / c;
-    printf ("%d ", d);
- 
-    return 0;
+// Convert board coordinates (16x16 blocks) to screen coordinates 
+uint16_t b2s_x(uint16_t x){
+	return x*IMG_WIDTH + IMG_WIDTH/2; 
+}
+uint16_t b2s_y(uint16_t y){
+	return y*IMG_HEIGHT + IMG_HEIGHT/2;
+}
+// Convert screen coordinates to board coordinates (16x16 blocks) 
+uint16_t s2b_x(uint16_t x){  
+	uint8_t coord = x / IMG_WIDTH; 
+	// Bounds Check
+	coord = (int)coord < 0 ? 0 : coord;
+	coord = (int)coord >= LVL_W ? LVL_W - 1 : coord;
+	return coord; 
+}
+uint16_t s2b_y(uint16_t y){
+	uint8_t coord = y / IMG_HEIGHT; 
+	// Bounds Check
+	coord = (int)coord < 0 ? 0 : coord;
+	coord = (int)coord >= LVL_H ? LVL_H - 1 : coord; 
+	return coord;
 }
 ```
 ### Animated Sprites
