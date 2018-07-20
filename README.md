@@ -11,12 +11,10 @@ Taking inspiration from the classic video game series "Monkey Ball", we wrote th
 " target="_blank"><img src="http://img.youtube.com/vi/pqWpO7V8EQA/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-## Features
+## Highlights
 + [Simulated Inertia](#simulated-inertia)
 + [Easy Level Construction](#easy-level-construction)
 + [Simple Collision Detection](#simple-collision-detection)
-+ [Animated Sprites](#animated-sprites)
-+ [High Scores](#high-scores)
 
 ### Simulated Inertia
 It was very important for us to make sure that the game controlls felt real. One of our main focuses was on simulating inertia, to give the ball some weight. I came up with this little "hack" while writing another program, and thought it would work perfectly here.
@@ -98,34 +96,7 @@ uint16_t s2b_y(uint16_t y){
 	return coord;
 }
 ```
-### Animated Sprites
-A more detailed description and implementation examples
-```C
-int main()
-{
-    char a = 30;
-    char b = 40;
-    char c = 10;
-    char d = (a * b) / c;
-    printf ("%d ", d);
- 
-    return 0;
-}
-```
-### High Scores
-A more detailed description and implementation examples
-```C
-int main()
-{
-    char a = 30;
-    char b = 40;
-    char c = 10;
-    char d = (a * b) / c;
-    printf ("%d ", d);
- 
-    return 0;
-}
-```
+
 ___
 
 #### Copyright (c) 2015-16, Joe Krachey
